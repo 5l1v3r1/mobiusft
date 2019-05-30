@@ -1,0 +1,57 @@
+Mobius Forensic Toolkit
+Copyright (C) 2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018 Eduardo Aguiar
+
+
+1. INTRODUCTION
+Mobius Forensic Toolkit is an open-source forensic framework written in
+C++ and Python/GTK that manages cases and case items, providing an abstract
+interface for developing extensions. Cases and item categories are defined
+using XML files, for easy integration with other tools.
+
+
+2. INSTALLATION
+
+./configure --with-libtsk=<SLEUTHKIT_DIR>
+make
+su -c 'make install'
+
+* <SLEUTHKIT_DIR> is the directory where sleuthkit has been installed.
+Use --without-sleuthkit to build the C++ API without support to the
+sleuthkit libraries.
+
+
+3. USAGE
+Run mobius_bin.py.
+
+
+4. MAILING LIST
+You can subscribe to Mobius Forensic Toolkit mailing list
+(mobiusft-list@nongnu.org) at Mobius project page at GNU Savannah
+(http://savannah.gnu.org/projects/mobiusft).
+
+
+5. LICENSE
+This program is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the
+Free Software Foundation; either version 2, or (at your option) any later
+version.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+
+6. THANKS
+Thank you for using Mobius Forensic Toolkit.
+
+Thanks to Open Clip Art (http://www.openclipart.org), Everaldo's Crystal
+Interaction Design Project (http://everaldo.com/crystal) and Wikimedia
+Commons (http://commons.wikimedia.org) for producing really amazing icons.
+
+Thanks to GNU Savannah (http://savannah.nongnu.org) for hosting this project.
+
+Beatae Mariae Virgini.

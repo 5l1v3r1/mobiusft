@@ -1,0 +1,1729 @@
+Mobius Forensic Toolkit 1.9
+
+	* Case model stored into .sqlite database
+	* Case model classes in C++ with Python wrapper
+	* Libmobius: mobius::model::item::id moved to attributes
+	* Libmobius: mobius::model::item::name moved to attributes
+	* Libmobius: New method case_manager::get_case_count
+	* Libmobius: New method item::get_child_count
+	* Libmobius: connection_pool::connection destruction fixed
+	* Libmobius: New class database::connection
+	* Libmobius: New method item::get_data_path
+	* Libmobius: New method item::get_create_path
+	* Libmobius: New method item::expand_masks
+	* Python API: mobius.model.item.id moved to attributes
+	* Python API: mobius.model.item.name moved to attributes
+	* Python API: New method case_manager.get_case_count
+	* Python API: New module pymobius.json_serializer
+	* Python API: New function pymobius.json_serializer.serialize
+	* Python API: New function pymobius.json_serializer.unserialize
+	* Python API: New method item.get_data_path
+	* Python API: New method item.get_create_path
+	* Python API: New method item.expand_masks
+	* Python API: Function pymobius.deprecated.get_data_path removed
+	* Python API: Function pymobius.deprecated.create_data_path removed
+	* Extension case-model removed
+	* Extension object-model removed
+	* Hive: Using item.get_data_path
+	* Filesystem-viewer: Using item.get_data_path
+	* Filesystem-viewer: Using item.create_data_path
+	* Partition-viewer: Using item.get_data_path
+	* Partition-viewer: Using item.create_data_path
+	* Gtk-ui: Service ui.new-icon-from-data removed
+	* Tools: New tool casetree
+	* Tools: New tool hashfs
+	* Python.examples: New example program list_categories.py
+	* Python.examples: New example program casetree.py
+
+Mobius Forensic Toolkit 1.8
+
+	* p2p.emule: New P2P module
+	* p2p.emuletorrent: New P2P module
+	* p2p.ares: Gets program version correctly
+	* p2p.ares: Handles bad encoded strings
+	* p2p.ares: Decodes TorrentH.dat evidence file
+	* p2p.ares: Decodes PHashIdx.dat evidence file
+	* p2p.ares: Decodes PHashIdxTemp.dat evidence file
+	* p2p.ares: Decodes TempPHash.dat evidence file
+	* p2p.ares: Decodes PHash_*.dat evidence files
+	* p2p.ares: Decodes PBTHash_*.dat evidence files
+	* p2p.ares: Decodes ___ARESTRA___ downloading files
+	* Hive-report: UserAccountReport bug fixed (reported by Clemente Paixão)
+	* Hive-report: CachedCredentialsReport bug fixed
+	* Libmobius: New function data_decoder.get_ipv4_be
+	* Libmobius: New function data_decoder.get_ipv4_le
+	* Libmobius: Module mobius::forensics::turing renamed to mobius::turing
+	* Libmobius: hive_key more resilient against corrupted hive files
+	* Python API: Module mobius.forensics.turing renamed to mobius.turing
+	* Python API: Module pymobius.forensics.turing renamed to pymobius.turing
+	* Extension emule-agent removed
+
+Mobius Forensic Toolkit 1.7
+
+	* Case-model: New function case.get_path
+	* Case-model: New function case.create_path
+	* Case-model: Service 'case.get-path' removed
+	* Floppy-imager: Using case.create_path
+	* Hive-report: Report "Ares Search" removed
+	* ICE: Option "Properties" removed
+	* ICE: New dialog for new case option
+	* P2P-Viewer: Added support for Ares Galaxy
+	* Part-catalogue: Import option bug fixed
+	* Report-wizard: New graphical command "while"
+	* Report-wizard: New graphical command "exec"
+	* Libmobius: New class mobius::crypt::hash_ed2k
+	* Libmobius: New module mobius::model
+	* Libmobius: New class mobius::model::case_manager
+	* Libmobius: New class mobius::model::Case
+	* Libmobius: New class mobius::model::item
+	* Libmobius: New function data_decoder::get_size
+	* Libmobius: New function hash_base::get_hex_digest
+	* Libmobius: New function hash::get_hex_digest
+	* Libmobius: exception.cc using std::to_string
+	* Libmobius: mobius::io::writer operator bool fixed
+	* Libmobius: mobius::crypt::hash_xxx.get_digest preserves state
+	* Python API: New module pymobius.p2p.ares
+	* Python API: New class mobius.decoder.data_decoder
+	* Python API: Function pymobius.deprecated.get_case_path removed
+	* Python API: Function pymobius.deprecated.create_case_path removed
+	* Python API: Catch exceptions on mobius.io.file methods
+	* Python API: Catch exceptions on mobius.io.folder methods
+	* Python API: Catch exceptions on mobius.io.writer methods
+	* Python API: mobius.io.file inherits from mobius.io.resource
+	* Python API: mobius.io.folder inherits from mobius.io.resource
+	* Python API: pymobius.forensics.p2p moved to pymobius.p2p
+	* Python API: New function data_decoder.get_size
+	* Python API: New function mobius.crypt.hash.reset
+	* Python API: New function mobius.crypt.hash.get_digest
+	* Python API: New function mobius.crypt.hash.get_hex_digest
+	* Python API: New function mobius.crypt.hmac.get_digest
+	* Python API: New function mobius.crypt.hmac.get_hex_digest
+	* Python API: Attribute mobius.crypt.hash.digest removed
+	* Python API: Attribute mobius.crypt.hmac.digest removed
+	* Python API: New module mobius.model
+	* Python API: New class mobius.model.case_manager
+	* Python API: New class mobius.model.case
+	* Python API: New class mobius.model.item
+	* Extension hive-shareaza-report removed
+
+Mobius Forensic Toolkit 1.6
+
+	* New extension P2P viewer
+	* P2P-viewer: Added support for Shareaza activity data
+	* Hive-Report: Four new fields added to Installed Programs report
+	* Hive-Report: Using registry.installed_programs
+	* Libmobius: New method mfc_decoder::get_unix_time
+	* Libmobius: Handle EWF corrupted files (Reported by Clemente Paixão)
+	* Libmobius: New function mobius::core::log
+	* Python API: New module mobius.decoder
+	* Python API: New class mobius.decoder.mfc_decoder
+	* Python API: New module registry.installed_programs
+	* Python API: New function pymobius.xml.get_attributes (xml)
+	* Python API: New function mobius.core.log
+
+Mobius Forensic Toolkit 1.5
+
+	* Libmobius: New imagefile format: Samsung's Secret Zone .msr files
+	* Libmobius: New class mobius::crypt::cipher_3des
+	* Libmobius: New class mobius::crypt::cipher_blowfish
+	* Libmobius: New class mobius::core::category_manager
+	* Libmobius: New class mobius::core::category
+	* Libmobius: New class mobius::core::attribute
+	* Libmobius: connection_pool default constructor implemented
+	* Libmobius: New method connection_pool.set_path
+	* Libmobius: New method statement.bind (int, const bytearray&)
+	* Libmobius: New method statement.get_column_bytearray
+	* Libmobius: core::application using connection_pool
+	* Libmobius: Method application.get_config_database removed
+	* Libmobius: New method application.new_connection
+	* Libmobius: New method application.new_transaction
+	* Libmobius: New module: mobius::imagefile::split
+	* Libmobius: New class mobius::imagefile::imagefile_dossier
+	* Libmobius: New class mobius::imagefile::imagefile_ewf
+	* Libmobius: New class mobius::imagefile::imagefile_msr
+	* Libmobius: New class mobius::imagefile::imagefile_raw
+	* Libmobius: New class mobius::imagefile::imagefile_solo
+	* Libmobius: New class mobius::imagefile::imagefile_split
+	* Libmobius: New class mobius::imagefile::imagefile_talon
+	* Libmobius: New function mobius::imagefile::new_imagefile_from_url
+	* Libmobius: New function mobius::imagefile::get_imagefile_types
+	* Libmobius: Constructor mobius::imagefile::imagefile (url) removed
+	* Libmobius: New method imagefile.get_metadata
+	* Libmobius: Lazy evaluation for imagefile_impl_xxx constructors
+	* Python API: New class mobius.crypt.cipher_3des
+	* Python API: New class mobius.crypt.cipher_blowfish
+	* Python API: New method application.new_transaction
+	* Python API: New class mobius.core.category_manager
+	* Python API: New class mobius.core.category
+	* Python API: New class mobius.core.attribute
+	* Python API: New method imagefile.get_metadata
+	* Python API: New method imagefile.is_available
+	* Python API: New class imagefile_dossier
+	* Python API: New class imagefile_ewf
+	* Python API: New class imagefile_msr
+	* Python API: New class imagefile_raw
+	* Python API: New class imagefile_solo
+	* Python API: New class imagefile_talon
+	* Python API: New function mobius.imagefile.new_imagefile_from_url
+	* Python API: New function mobius.imagefile.get_imagefile_types
+	* Python API: Module variable mobius.imagefile.typelist removed
+	* Python API: Catch exceptions on mobius.filesystem.entry methods
+	* Attribute-viewer: Use mobius.core.category_manager
+	* Category-manager: Use mobius.core.category_manager
+	* Ice: Use mobius.core.category_manager
+	* Object-model: Use mobius.core.category_manager
+	* Part-catalogue: Use mobius.core.category_manager
+	* Datasource-imagefile: Handle .msr image files
+	* Datasource-imagefile: Using mobius.imagefile.new_imagefile_from_url
+	* Datasource-imagefile: Using mobius.imagefile.get_imagefile_types
+	* Data-sourcerer: Using mobius.imagefile.new_imagefile_from_url
+	* Data-sourcerer: Using mobius.imagefile.get_imagefile_types
+	* Gtk-UI: Event widetableview.on_selection_changed created
+	* Gtk-UI: New method widetableview.get_master_report_id
+	* Gtk-UI: New method widetableview.get_master_report_name
+	* Gtk-UI: New method widetableview.get_master_report_app
+	* Gtk-UI: New method widetableview.set_master_report_id
+	* Gtk-UI: New method widetableview.set_master_report_name
+	* Gtk-UI: New method widetableview.set_master_report_app
+	* Gtk-UI: New method widetableview.get_detail_report_id
+	* Gtk-UI: New method widetableview.get_detail_report_name
+	* Gtk-UI: New method widetableview.get_detail_report_app
+	* Gtk-UI: New method widetableview.set_detail_report_id
+	* Gtk-UI: New method widetableview.set_detail_report_name
+	* Gtk-UI: New method widetableview.set_detail_report_app
+	* Hive-report: Handle 'no hashes' on UserAccounts report
+	* Hive-report: Set detail report metadata on UserAccounts report
+	* Extension category-model removed
+	* Tools: new tool imagefile_cat
+
+Mobius Forensic Toolkit 1.4
+
+	* New case view: Turing view
+	* Hive-report: Missing import statement added
+	* Hive-report: UserAccount report using widetableview widget
+	* Hive-report: New fields for UserAccount report
+	* Hive-report: Report UserLogons merged into UserAccount report
+	* Gtk-ui: New function tableview.add_row_by_object
+	* Gtk-ui: New function widetableview.add_row_by_object
+	* Turing: Exports .json files
+	* Turing: Imports .json files
+	* Libmobius: New class mobius::crypt::hash_md4
+	* Libmobius: New function mobius::crypt::generate_hash_nt
+	* Libmobius: New function mobius::crypt::generate_hash_lm
+	* Libmobius: New function mobius::crypt::generate_hash_msdcc1
+	* Libmobius: New function mobius::crypt::generate_hash_msdcc2
+	* Libmobius: Class mobius::crypt::hash supports MD4
+	* Libmobius: cipher_aes constructor args changed to (key, mode, iv)
+	* Libmobius: cipher_des constructor args changed to (key, mode, iv)
+	* Libmobius: New function registry.get_syskey
+	* Libmobius: connection_pool has dedicated db object for main thread
+	* Libmobius: New module mobius::forensics::turing
+	* Libmobius: New class mobius::forensics::turing::turing
+	* Libmobius: New class mobius::forensics::turing::hash
+	* Python API: New class mobius.crypt.hash
+	* Python API: New module mobius.forensics.turing
+	* Python API: New class mobius.forensics.turing.turing
+	* Python API: New class mobius.forensics.turing.hash
+	* Python API: mobius.crypt.hash_adler32 removed (use crypt.hash)
+	* Python API: mobius.crypt.hash_crc32 removed (use crypt.hash)
+	* Python API: mobius.crypt.hash_md5 removed (use crypt.hash)
+	* Python API: mobius.crypt.hash_sha1 removed (use crypt.hash)
+	* Python API: mobius.crypt.hash_sha2_224 removed (use crypt.hash)
+	* Python API: mobius.crypt.hash_sha2_256 removed (use crypt.hash)
+	* Python API: mobius.crypt.hash_sha2_384 removed (use crypt.hash)
+	* Python API: mobius.crypt.hash_sha2_512 removed (use crypt.hash)
+	* Python API: mobius.crypt.hash_sha2_512_224 removed (use crypt.hash)
+	* Python API: mobius.crypt.hash_sha2_512_256 removed (use crypt.hash)
+	* Python API: mobius.crypt.hash_zip removed (use crypt.hash)
+	* Python API: Call PyDECREF after appending an item to list
+	* Python API: reader.read size arg defaults to remaining data size
+	* Extension hive-turing removed
+	* Extension turing-model removed
+
+Mobius Forensic Toolkit 1.3
+
+	* Libmobius: Automatically decrypts domain cached credentials' values
+	* Libmobius: Added support for MSDCC2
+	* Libmobius: Select LSA key by GUID for PolRevision > 0x10009
+	* Libmobius: New class mobius::crypt::hmac
+	* Libmobius: New handle class mobius::crypt::hash
+	* Libmobius: 5x improvement for hash block functions
+	* Libmobius: 2x extra improvement for hash_md5 on little endian machines
+	* Libmobius: 3x improvement for hash_adler32
+	* Libmobius: New function hash_adler32::update_byte (20x faster)
+	* Libmobius: 2x improvement on data_decoder::get_uint functions
+	* Libmobius: New class mobius::benchmark
+	* Libmobius: Bytearray using vector<uint8_t> as container type
+	* Libmobius: New operator^ (bytearray, bytearray)
+	* Libmobius: New function bytearray.dump
+	* Libmobius: New function bytearray.lpad
+	* Libmobius: New function bytearray.rpad
+	* Libmobius: New class mobius::database::connection_pool
+	* Hive-report: LSA Secrets report shows each value on distinct row
+	* Hive-report: New fields added to Cached Credentials report
+	* Gtk-UI: New widget 'widetableview'
+	* Python API: Do not install *.h files from Python API
+	* Python API: New module pymobius.forensics.registry.cached_credentials
+	* Unittest: New benchmark tool
+
+Mobius Forensic Toolkit 1.2
+
+	* Libmobius: Automatically decrypts LSA Secrets registry values
+	* Libmobius: New class mobius::crypt::cipher_aes
+	* Libmobius: New class mobius::crypt::hash_sha2_224
+	* Libmobius: New class mobius::crypt::hash_sha2_256
+	* Libmobius: New class mobius::crypt::hash_sha2_384
+	* Libmobius: New class mobius::crypt::hash_sha2_512
+	* Libmobius: New class mobius::crypt::hash_sha2_512_224
+	* Libmobius: New class mobius::crypt::hash_sha2_512_256
+	* Libmobius: New class registry_value_impl_container
+	* Libmobius: New constructor registry_value (name, data)
+	* Libmobius: New constructor data_decoder (const mobius::bytearray&)
+	* Libmobius: Catch exceptions on tsk::adaptor methods
+	* Libmobius: Clearerr called after ferror
+	* Libmobius: hash_base, hash_stream and hash_block interfaces improved
+	* Python API: New class mobius.crypt.cipher_aes
+	* Python API: New class mobius.crypt.hash_adler32
+	* Python API: New class mobius.crypt.hash_crc32
+	* Python API: New class mobius.crypt.hash_md5
+	* Python API: New class mobius.crypt.hash_sha1
+	* Python API: New class mobius.crypt.hash_sha2_224
+	* Python API: New class mobius.crypt.hash_sha2_256
+	* Python API: New class mobius.crypt.hash_sha2_384
+	* Python API: New class mobius.crypt.hash_sha2_512
+	* Python API: New class mobius.crypt.hash_sha2_512_224
+	* Python API: New class mobius.crypt.hash_sha2_512_256
+	* Hive-report: Using LSA decrypted values
+	* Hive-turing: Using LSA decrypted values
+
+Mobius Forensic Toolkit 1.1
+
+	* Libmobius: New class mobius::crypt::cipher_rot13
+	* Libmobius: New class mobius::crypt::hash_sha1
+	* Libmobius: Automatically decodes UserAssist registry keys
+	* Libmobius: Automatically decrypts PSSP registry keys
+	* Libmobius: New class registry_key_list
+	* Libmobius: New function registry_key.get_key_by_mask
+	* Libmobius: New function registry_key.get_value_by_mask
+	* Libmobius: New function registry_key.get_data_by_mask
+	* Libmobius: New function registry.get_key_by_mask
+	* Libmobius: New function registry.get_value_by_mask
+	* Libmobius: New function registry.get_data_by_mask
+	* Libmobius: New function mobius::string::fnmatch
+	* Libmobius: Function registry_key.get_parent eliminated
+	* Libmobius: New method bytearray::to_string
+	* Libmobius: Added multithread support to mobius::database
+	* Libmobius: Mobius::crypt::cipher_block_mode recoded as handle class
+	* Libmobius: New function mobius::crypt::new_cipher_block_mode_ecb
+	* Libmobius: New function mobius::crypt::new_cipher_block_mode_cbc
+	* Libmobius: Update (bytearray) function implemented for hashes
+	* Libmobius: Encrypt (bytearray) function implemented for ciphers
+	* Libmobius: Decrypt (bytearray) function implemented for ciphers
+	* Libmobius: Module mobius::ant renamed to mobius::forensics
+	* Libmobius: Registry_data implementation changed from pimpl to handler
+	* Python API: Mobius.api module renamed to mobius
+	* Python API: Package crypt merged into mobius
+	* Python API: Package core merged into mobius
+	* Python API: New submodule mobius.imagefile
+	* Python API: New submodule mobius.io
+	* Python API: New submodule mobius.partition
+	* Python API: New submodule mobius.system
+	* Python API: New class mobius.crypt.cipher_rot13
+	* Python API: New master main module pymobius
+	* Python API: Mobius.application moved to pymobius
+	* Python API: Mobius.deprecated moved to pymobius
+	* Python API: Mobius.extension moved to pymobius
+	* Python API: Mobius.mediator moved to pymobius
+	* Python API: Module mobius.ant renamed to mobius.forensics
+	* Python API: Mobius.pyant renamed to pymobius.forensics
+	* Python API: Mobius.xml moved to pymobius
+	* forensics: New module registry.user_assist
+	* case-model: Using pymobius.xml
+	* category-model: Using pymobius.xml
+	* category-model: Using mobius.core.application
+	* datasource-imagefile: Using mobius.core.application
+	* datasource-imagefile: Using mobius.imagefile.imagefile
+	* datasource-physical-device: Using mobius.system.get_devices
+	* data-sourcerer: Using mobius.core.application
+	* data-sourcerer: Using mobius.imagefile.imagefile
+	* data-sourcerer: Using pymobius.deprecated
+	* data-viewer: Using pymobius.deprecated
+	* emule-agent: Import mobius
+	* engelbart: Import mobius
+	* extension-builder: Import mobius
+	* extension-manager: Import mobius
+	* filesystem-viewer: Using pymobius.deprecated
+	* filesystem-viewer: Using pymobius.xml
+	* gigatribe-agent: Using mobius.io
+	* gtk-ui: Using pymobius.xml
+	* gtk-ui: Using mobius.core.application
+	* gtk-ui: Using mobius.io
+	* gtk-report-dialog: Import mobius
+	* hive: Using mobius.core.application
+	* hive: Using pymobius.deprecated
+	* hive: Using pymobius.forensics
+	* hive-report: Using mobius.crypt
+	* hive-report: IEAutoComplete report moved from hive-protected-storage
+	* hive-turing: Using mobius.crypt
+	* hive-turing: Using new PSSP key direct access
+	* hive-shareaza: Using new PSSP key direct access
+	* hive-gigatribe: Using new PSSP key direct access
+	* ice: Import mobius
+	* lshw-agent: Using mobius.io
+	* part-catalogue: Using pymobius.xml
+	* part-model: Import mobius
+	* partition-viewer: Using pymobius.xml
+	* partition-viewer: Using pymobius.deprecated
+	* partition-viewer: Using mobius.partition
+	* report-model: Import mobius
+	* sdi-window-manager: Import mobius
+	* skype-agent: Using mobius.io
+	* report-model: Using pymobius.xml
+	* turing: Using mobius.io
+	* turing-model: Using mobius.crypt
+	* unittest: string::fnmatch tests added
+	* Extension xml-pickle removed
+	* Extension hive-protected-storage removed
+
+Mobius Forensic Toolkit 1.0
+
+	* hive: uses mobius.pyant.registry to retrieve registry files from disk
+	* hive: interface reimplemented as a case view
+	* hive: new option to export registry files
+	* hive: new option to select registry
+	* hive: added support to big data (db) cells
+	* hive: shows value size
+	* hive: stores local copies of the registry files for fast access
+	* Libmobius: new module mobius::ant
+	* Libmobius: new module mobius::ant::registry
+	* Libmobius: new class mobius::ant::registry::hive_file
+	* Libmobius: new class mobius::ant::registry::hive_key
+	* Libmobius: new class mobius::ant::registry::hive_value
+	* Libmobius: new class mobius::ant::registry::hive_data
+	* Libmobius: new class mobius::ant::registry::hive_decoder
+	* Libmobius: new class mobius::ant::registry::registry
+	* Libmobius: new class mobius::ant::registry::registry_file
+	* Libmobius: new class mobius::ant::registry::registry_key
+	* Libmobius: new class mobius::ant::registry::registry_value
+	* Libmobius: new class mobius::ant::registry::registry_data
+	* Libmobius: new class mobius::ant::registry::registry_key_impl_base
+	* Libmobius: new class mobius::ant::registry::registry_key_impl_null
+	* Libmobius: new class mobius::ant::registry::registry_key_impl_hkey
+	* Libmobius: new class mobius::ant::registry::registry_key_impl_container
+	* Libmobius: new class mobius::ant::registry::registry_key_impl_link
+	* Libmobius: new class mobius::ant::registry::registry_value_impl_base
+	* Libmobius: new class mobius::ant::registry::registry_value_impl_null
+	* Libmobius: new class mobius::ant::registry::registry_value_impl_hvalue
+	* Libmobius: new function mobius::filesystem::entry.get_child_by_name
+	* Libmobius: new function mobius::filesystem::entry.get_child_by_path
+	* Libmobius: new function mobius::filesystem::entry.new_reader
+	* Libmobius: better definition of deleted entries on filesystem::tsk
+	* Libmobius: better definition of reallocated entries on filesystem::tsk
+	* Libmobius: load on demand implemented for filesystem::tsk::entry_impl
+	* Libmobius: new function mobius::string::to_string
+	* Libmobius: hash_md5 calculations fully inlined
+	* Libmobius: tsk::entry handles VIRT_DIR type
+	* Python API: new module mobius.xml
+	* Python API: new class mobius.xml.Pickle
+	* Python API: new package mobius.ant
+	* Python API: new package mobius.ant.registry
+	* Python API: new class mobius.ant.registry.registry
+	* Python API: new class mobius.ant.registry.registry_file
+	* Python API: new class mobius.ant.registry.registry_key
+	* Python API: new class mobius.ant.registry.registry_value
+	* Python API: new class mobius.ant.registry.registry_data
+	* Python API: new package mobius.pyant
+	* Python API: new module mobius.pyant.vfs
+	* Python API: new module mobius.pyant.registry
+	* Python API: new function mobius.filesystem.entry.get_child_by_name
+	* Python API: new function mobius.filesystem.entry.get_child_by_path
+	* Python API: new function mobius.filesystem.entry.new_reader
+	* Python API: new function PyString_from_bytearray
+	* Python API: handles exceptions at mobius.filesystem.entry (reported by Clemente Paixão).
+	* hive-gigatribe-report: compatible with the new C++ registry classes
+	* hive-shareaza-report: compatible with the new C++ registry classes
+	* hive-report: compatible with the new C++ registry classes
+	* hive-protected-storage: compatible with the new C++ registry classes
+	* hive-turing: compatible with the new C++ registry classes
+	* gtk-ui: uses mobius.xml.Pickle
+	* gtk-ui: larger icons on viewselector toolbar
+	* gtk-ui: new function viewselector.remove
+	* gtk-ui: new function viewselector.get_toolbar
+	* xml-pickle: uses mobius.xml.Pickle
+	* datasource-imagefile: shows metadata even if current URL is selected
+	* ice: status bar eliminated
+	* ice: update item toolbar when views are added or removed
+	* ice: update views when datasource is changed
+	* tools: new tool "hive-info"
+	* tools: new tool "hive-scan"
+
+Mobius Forensic Toolkit 0.5.31
+
+	* Libmobius: speed improvement for module imagefile::ewf
+	* Libmobius: new module mobius::disk
+	* Libmobius: new class mobius::disk::disk
+	* Libmobius: new class mobius::disk::disk_device
+	* Libmobius: new class mobius::disk::disk_imagefile
+	* Libmobius: new class mobius::disk::disk_reader
+	* Libmobius: new function mobius::disk::new_disk_from_device_uid
+	* Libmobius: new function mobius::disk::new_disk_from_reader
+	* Libmobius: new function mobius::disk::new_disk_from_url
+	* Libmobius: new class mobius::metadata
+	* Libmobius: new class mobius::filesystem::entry
+	* Libmobius: new class mobius::filesystem::stream
+	* Libmobius: new class mobius::filesystem::entry_impl_base
+	* Libmobius: new class mobius::filesystem::stream_impl_base
+	* Libmobius: new class mobius::filesystem::tsk::entry_impl
+	* Libmobius: new class mobius::filesystem::tsk::stream_impl
+	* Libmobius: new class mobius::filesystem::tsk::reader_impl
+	* Libmobius: new class mobius::filesystem::tsk::adaptor
+	* Libmobius: filesystem_XXX common attributes moved to filesystem class
+	* Libmobius: new function mobius::filesystem::filesystem.get_metadata
+	* Libmobius: new function mobius::filesystem::filesystem.get_root_entry
+	* Libmobius: function filesystem_get_metadata removed
+	* Libmobius: function get_filesystems receives disk as arg
+	* Libmobius: module mobius::tsk removed
+	* Libmobius: module mobius::codec renamed as mobius::encoder
+	* Python API: module mobius.tsk removed
+	* Python API: new submodule mobius.disk
+	* Python API: new class mobius.disk.disk
+	* Python API: new class mobius.disk.disk_device
+	* Python API: new class mobius.disk.disk_imagefile
+	* Python API: new class mobius.disk.disk_reader
+	* Python API: new function mobius.disk.new_disk_from_device_uid
+	* Python API: new function mobius.disk.new_disk_from_reader
+	* Python API: new function mobius.disk.new_disk_from_url
+	* Python API: new submodule mobius.filesystem
+	* Python API: new base class mobius.filesystem.filesystem
+	* Python API: new class mobius.filesystem.entry
+	* Python API: new class mobius.filesystem.stream
+	* Python API: new function mobius.filesystem.filesystem.get_metadata
+	* Python API: new function mobius.filesystem.filesystem.get_root_entry
+	* Python API: class filesystem_ext2 moved to mobius.filesystem
+	* Python API: class filesystem_hfs moved to mobius.filesystem
+	* Python API: class filesystem_iso moved to mobius.filesystem
+	* Python API: class filesystem_ntfs moved to mobius.filesystem
+	* Python API: class filesystem_vfat moved to mobius.filesystem
+	* Python API: function get_filesystems moved to mobius.filesystem
+	* Python API: function mobius.api.get_filesystems receives disk as arg
+	* Python API: function mobius.api.get_filesystem_metadata removed
+	* Python API: function mobius.api.get_partitions receives disk as arg
+	* Python API: function mobius.api.get_partition_table receives disk as arg
+	* Python API: new function PyList_FromMetadata
+	* configure.ac: libtsk mandatory
+	* gtk-ui: lazy update implemented for viewselector
+	* filesystem-viewer: new icon
+	* filesystem-viewer: uses mobius.disk
+	* filesystem-viewer: stores data into item's data folder
+	* partition-viewer: uses mobius.disk
+	* partition-viewer: stores data into item's data folder
+	* data-viewer: new icon
+	* data-viewer: uses mobius.disk
+	* data-sourcerer: uses mobius.disk
+	* datasource-model: service datasource.is-available removed
+	* datasource-model: service datasource.get-reader removed
+	* datasource-model: service datasource.get-metadata removed
+	* datasource-model: service datasource.get-path removed
+	* tools: new tool dirfs
+	* tools: dirtsk removed
+	* tools: registry_get removed
+
+Mobius Forensic Toolkit 0.5.30
+
+	* Libmobius: new module mobius::filesystem
+	* Libmobius: new class mobius::filesystem::filesystem
+	* Libmobius: new class mobius::filesystem::filesystem_ext2
+	* Libmobius: new class mobius::filesystem::filesystem_iso
+	* Libmobius: new class mobius::filesystem::filesystem_ntfs
+	* Libmobius: new class mobius::filesystem::filesystem_vfat
+	* Libmobius: new class mobius::filesystem::filesystem_impl_base
+	* Libmobius: new class mobius::filesystem::filesystem_impl_null
+	* Libmobius: new class mobius::filesystem::filesystem_impl_ext2
+	* Libmobius: new class mobius::filesystem::filesystem_impl_iso
+	* Libmobius: new class mobius::filesystem::filesystem_impl_ntfs
+	* Libmobius: new class mobius::filesystem::filesystem_impl_vfat
+	* Libmobius: new function mobius::filesystem::get_filesystems
+	* Libmobius: new function mobius::filesystem::get_filesystem_metadata
+	* Libmobius: new function to_string (const datetime&)
+	* Libmobius: new function mobius::datetime::datetime_from_iso_string
+	* Libmobius: new function data_decoder.get_iso9660_datetime
+	* Libmobius: new function data_decoder.get_unix_datetime
+	* Libmobius: new function data_decoder.get_uuid
+	* Libmobius: new function string::to_hex
+	* Python API: new generic dataholder class "api_dataholder"
+	* Python API: new class mobius.api.filesystem_ext2
+	* Python API: new class mobius.api.filesystem_hfs
+	* Python API: new class mobius.api.filesystem_iso
+	* Python API: new class mobius.api.filesystem_ntfs
+	* Python API: new class mobius.api.filesystem_vfat
+	* Python API: new function mobius.api.get_filesystems
+	* Python API: new function mobius.api.get_filesystem_metadata
+	* filesystem-viewer: new extension
+	* case-model: deprecated code eliminated
+	* datasource-model: service datasource.new-slice eliminated
+	* xml-pickle: save and load null datetimes
+	* xml-pickle: uses inspect to retrieve class members
+	* tools: new filesystem_scan tool implemented
+
+Mobius Forensic Toolkit 0.5.29
+
+	* Libmobius: new module mobius::partition
+	* Libmobius: new class mobius::partition::partition_table
+	* Libmobius: new class mobius::partition::partition_system_apm
+	* Libmobius: new class mobius::partition::partition_system_dos
+	* Libmobius: added support to DOS partition system
+	* Libmobius: added support to GPT partition system
+	* Libmobius: added support to APM partition system
+	* Libmobius: new operator != (bytearray, bytearray)
+	* Libmobius: new class mobius::io::reader_impl_bytearray
+	* Libmobius: new class mobius::io::sector_reader_adaptor
+	* Libmobius: new function mobius::string::lpad
+	* Libmobius: new function mobius::string::rpad
+	* tools: new partition_table tool
+	* Python API: new package mobius.api
+	* Python API: packaged core merged into mobius.api
+	* Python API: packaged io merged into mobius.api
+	* Python API: packaged imagefile merged into mobius.api
+	* Python API: new class mobius.api.device
+	* Python API: new class mobius.api.partition
+	* Python API: new function mobius.api.get_partition_table
+	* Python API: new function mobius.api.get_devices
+	* Python API: new function mobius.api.get_partitions
+	* partition-viewer: uses mobius.api.get_partition_table
+	* category-model: uses mobius.api instead of mobius.core
+	* datasource-imagefile: uses mobius.api instead of mobius.imagefile
+	* datasource-imagefile: uses mobius.api instead of mobius.io
+	* datasource-imagefile: uses mobius.api instead of mobius.core
+	* datasource-physical-device: uses mobius.api.device and get_devices
+	* datasource-physical-device: does not need package python_gudev anymore
+	* datasource-model: only uses ReaderSlice when necessary
+	* data-sourcerer: uses mobius.api instead of mobius.imagefile
+	* data-sourcerer: uses mobius.api instead of mobius.core
+	* data-viewer: accept mobius.api.reader objects as stream
+	* gigatribe-agent: uses mobius.api instead of mobius.io
+	* gtk-ui: uses mobius.api instead of mobius.io
+	* gtk-ui: uses mobius.api instead of mobius.core
+	* hive: uses mobius.api instead of mobius.io
+	* hive: uses mobius.api instead of mobius.core
+	* lshw-agent: uses mobius.api instead of mobius.io
+	* skype-agent: uses mobius.api instead of mobius.io
+	* turing: uses mobius.api instead of mobius.io
+	* partition-agent: extension removed
+	* partition-agent-dos: extension removed
+
+Mobius Forensic Toolkit 0.5.28
+
+	* new extension gtk-report-dialog
+	* attribute-viewer: DND exports attribute list and value dictionary
+	* lshw-agent: bug returning items fixed
+	* lshw-agent: ignores disks without size information
+	* report-model: workaround for gtk.Dialog bug
+	* report-model: service report.run-dialog moved to gtk-report-dialog ext.
+	* datasource-model: does not set empty attributes
+	* tools: new ewf_decoder tool
+	* Libmobius: new module mobius::imagefile::ewf
+	* Libmobius: EWF implementation moved to mobius::imagefile::ewf
+	* Libmobius: EWF write support implemented
+	* Libmobius: fixed imagefile_impl_dossier bug when parsing some log files
+	* Libmobius: new attribute imagefile.compression_level
+	* Libmobius: new module mobius::codec
+	* Libmobius: new class mobius::codec::data_encoder
+	* Libmobius: new abstract class crypt::hash_stream
+	* Libmobius: new hash function crypt::hash_adler32
+	* Libmobius: new hash function crypt::hash_md5
+	* Libmobius: new template class crypt::hash_functor
+	* Libmobius: new template class io::reader_impl_evaluator
+	* Libmobius: new template class io::writer_impl_evaluator
+	* Libmobius: new method application.get_os_name 
+	* Libmobius: new namespace mobius::string
+	* Libmobius: new function mobius::string::replace
+	* Libmobius: function string_tolower renamed to string::tolower
+	* Libmobius: function string_toupper renamed to string::tolower
+	* Libmobius: function string_startswith renamed to string::startswith
+	* Libmobius: function string_endswith renamed to string::endswith
+	* Libmobius: function string_strip renamed to string::strip
+	* Libmobius: function string_lstrip renamed to string::lstrip
+	* Libmobius: function string_rstrip renamed to string::rstrip
+	* Libmobius: function string_split renamed to string::split
+	* Libmobius: function string_remove_all renamed to string::remove_char
+	* Libmobius: new method date.set_year
+	* Libmobius: new method date.set_month
+	* Libmobius: new method date.set_day
+	* Libmobius: datetime::date methods turned noexcept when possible
+	* Libmobius: datetime::time methods turned noexcept when possible
+	* Libmobius: datetime::datetime methods turned noexcept when possible
+	* Libmobius: datetime::timedelta methods turned noexcept
+	* Libmobius: datetime::conv_julian functions turned noexcept
+	* Libmobius: datetime::date operator- returns timedelta
+	* Libmobius: datetime::date operator+ using timedelta
+	* Libmobius: datetime::date new operator- (date, timedelta)
+	* Libmobius: datetime::datetime new operator- (datetime, timedelta)
+	* Libmobius: datetime::timedelta new constructor (years, days, secs, nsecs)
+	* Libmobius: new function datetime::now ()
+	* Libmobius: new datetime::operator != (date, date)
+	* Libmobius: new datetime::operator < (date, date)
+	* Libmobius: new datetime::operator <= (date, date)
+	* Libmobius: new datetime::operator > (date, date)
+	* Libmobius: new datetime::operator >= (date, date)
+	* Libmobius: new ostream<< operator (date)
+	* Libmobius: new ostream<< operator (time)
+	* Libmobius: new ostream<< operator (datetime)
+	* Libmobius: new method bytearray.from_hexstring
+	* Libmobius: new method bytearray.random
+
+Mobius Forensic Toolkit 0.5.27
+
+	* new extension lshw-agent
+	* Libmobius: new module mobius::core
+	* Libmobius: new module mobius::decoder
+	* Libmobius: new module mobius::database
+	* Libmobius: new class mobius::database::database
+	* Libmobius: new class mobius::database::transaction
+	* Libmobius: new class mobius::database::statement
+	* Libmobius: new class mobius::system::device_list
+	* Libmobius: new class mobius::system::device
+	* Libmobius: class application moved to mobius::core
+	* Libmobius: application class is singleton now
+	* Libmobius: application class compatible with XDG Base Directory Spec.
+	* Libmobius: new method application.get_id
+	* Libmobius: new method application.get_name
+	* Libmobius: new method application.get_version
+	* Libmobius: new method application.get_title
+	* Libmobius: new method application.get_copyright
+	* Libmobius: new method application.get_config_path
+	* Libmobius: new method application.get_cache_path
+	* Libmobius: new method application.get_data_path
+	* Libmobius: new method application.has_config
+	* Libmobius: new method application.get_config
+	* Libmobius: new method application.set_config
+	* Libmobius: new method data_decoder.get_int8
+	* Libmobius: new method data_decoder.get_uint8
+	* Libmobius: new method data_decoder.get_int16_le
+	* Libmobius: new method data_decoder.get_ipv4
+	* Libmobius: new class mobius::decoder::mfc_decoder
+	* Libmobius: class data_decoder moved to mobius::decoder
+	* Libmobius: imagefile_ewf handles 64-bit number of sectors
+	* Libmobius: new function get_path_from_url
+	* Libmobius: new function get_url_from_path
+	* Python API: new class mobius.core.application
+	* Python API: service 'app.get-version' deleted
+	* Python API: service 'app.get-name' deleted
+	* Python API: service 'app.get-user-path' deleted
+	* Python API: service 'app.get-path' deleted
+	* Python API: service 'app.get-data-path' deleted
+	* Python API: package mobius.config deleted
+	* category-manager: uses base64.b64decode
+	* category-model: uses application.get_config_path
+	* category-model: category.xml compatible with lshw-agent extension
+	* category-model: uses base64.b64decode
+	* datasource-imagefile: uses application.get/set_config
+	* data-sourcerer: uses application.get/set_config
+	* data-sourcerer: better error handling
+	* data-viewer: users application.get/set_config
+	* emule-agent: uses application.get/set_config
+	* engelbart: uses application.get/set_config
+	* engelbart: uses application.get_cache_path
+	* extension-builder: uses application.get/set_config
+	* extension-builder: uses base64.b64decode
+	* extension-manager: uses application.get/set_config
+	* gtk-ui: uses application.get/set_config
+	* hive: uses application.get/set_config
+	* hive: detects NTUSER.DAT on Win10
+	* ice: uses application.get/set_config
+	* ice: uses mobius.core.application
+	* ice: uses base64.b64decode
+	* part-catalogue: uses application.get/set_config
+	* part-catalogue: uses base64.b64decode
+	* part-model: uses application.get_config_path
+	* report-model: uses application.get/set_config
+	* report-model: uses application.get_config_path
+	* report-model: uses application.get_cache_path
+	* sdi-window-manager: uses mobius.core.application
+	* sdi-window-manager: uses application.get/set_config
+	* skype-agent: uses application.get/set_config
+	* turing-model: uses application.get_config_path
+	* tools: new tool device_list
+	* tools: new tool disk_list
+	* extension config removed
+
+Mobius Forensic Toolkit 0.5.26
+
+	* Libmobius: new class mobius::imagefile::imagefile
+	* Libmobius: new class mobius::imagefile::imagefile_impl_raw
+	* Libmobius: new class mobius::imagefile::imagefile_impl_split
+	* Libmobius: new class mobius::imagefile::imagefile_impl_dossier
+	* Libmobius: new class mobius::imagefile::imagefile_impl_solo
+	* Libmobius: new class mobius::imagefile::imagefile_impl_talon
+	* Libmobius: new class mobius::imagefile::imagefile_impl_ewf
+	* Libmobius: new class mobius::data_decoder
+	* Libmobius: virtual destructor for file_impl_base implemented
+	* Libmobius: mobius/io/resource_impl_null.h created
+	* Libmobius: mobius/io/file_impl_null.h created
+	* Libmobius: mobius/io/folder_impl_null.h created
+	* Libmobius: mobius/io/reader_impl_null.h created
+	* Libmobius: new bytearray operator+=
+	* Libmobius: new bytearray operator+
+	* Libmobius: bytearray.clear () implemented
+	* Libmobius: mobius::io::file::new_writer flag named changed to "overwrite"
+	* Libmobius: new string function string_strip
+	* Libmobius: new string function string_lstrip
+	* Libmobius: new string function string_rstrip
+	* Libmobius: new string function string_remove_all
+	* Libmobius: datetime::date operator bool implemented
+	* Libmobius: datetime::time operator bool implemented
+	* Libmobius: datetime::datetime operator bool implemented
+	* Libmobius: new function zlib_compress
+	* Libmobius: new function zlib_decompress
+	* Python API: new class mobius.imagefile.imagefile
+	* new extension hive-shareaza-report
+	* new extension hive-gigatribe-report
+	* hive-shareaza-report: new report "Shareaza general info"
+	* hive-shareaza-report: new report "Shareaza user folders"
+	* hive-shareaza-report: new report "Shareaza protocols"
+	* hive-shareaza-report: new report "Shareaza search history"
+	* attribute-viewer: retrieve item's children on DND
+	* gtk-ui: new event attribute-list.on_dnd_get_data
+	* datasource-imagefile: use mobius.imagefile.imagefile
+	* datasource-model: compatible with mobius.io.reader
+	* datasource-physical-device: compatible with mobius.io.reader
+	* partition-viewer: compatible with mobius.io.reader
+	* data-sourcerer: use mobius.imagefile.imagefile
+	* extension imagefile-raw removed
+	* extension imagefile-split removed
+	* extension imagefile-dossier removed
+	* extension imagefile-solo removed
+	* extension imagefile-talon removed
+	* extension imagefile-ewf removed
+	* tools: new directory
+	* tools: new tool imagefile_info
+	* tools: new tool imagefile_convert
+
+Mobius Forensic Toolkit 0.5.25
+
+	* Libmobius: charset conversion functions implemented (mobius/charset.h)
+	* Libmobius: new class mobius::io::resource
+	* Libmobius: new class mobius::io::file
+	* Libmobius: new class mobius::io::folder
+	* Libmobius: new class mobius::io::reader
+	* Libmobius: new class mobius::io::writer
+	* Libmobius: new class mobius::system::group
+	* Libmobius: new class mobius::system::user
+	* Libmobius: class mobius::io::file_descriptor_reader removed
+	* Libmobius: class mobius::io::file_reader removed
+	* Libmobius: class mobius::io::local_file_reader removed
+	* Libmobius: class mobius::io::seekable_reader removed
+	* Libmobius: class mobius::io::uri_reader removed
+	* Python API: new class mobius.io.file
+	* Python API: new class mobius.io.folder
+	* Python API: new class mobius.io.reader
+	* Python API: new class mobius.io.writer
+	* Python API: class mobius.io.uri_reader removed
+	* part-catalogue: show confirmation dialog before inserting new part
+	* imagefile-ewf: handle 'disk' section
+	* imagefile-ewf: handle 'done' section
+	* imagefile-ewf: use mobius.io.file
+	* imagefile-dossier: use mobius.io.file
+	* imagefile-raw: use mobius.io.file
+	* imagefile-solo: use mobius.io.file
+	* imagefile-split: use mobius.io.file
+	* imagefile-talon: use mobius.io.file
+	* datasource-imagefile: use mobius.io.file
+	* gigatribe-agent: use mobius.io.file
+	* hive: use mobius.io.file
+	* skype-agent: use mobius.io.file
+	* turing: use mobius.io.file
+	* uri extension removed 
+	* uri-file extension removed 
+	* configure.ac: fixed bug when libtsk is not available. Reported by Hortensio Luis Garcia Real.
+	* configure.ac: do not generate .a files into python wrapper dir
+
+Mobius Forensic Toolkit 0.5.24
+
+	* Libmobius: new class mobius::io::uri
+	* Libmobius: new class mobius::io::reader (abstract class)
+	* Libmobius: new class mobius::io::seekable_reader (abstract class)
+	* Libmobius: new class mobius::io::file_descriptor_reader
+	* Libmobius: new class mobius::io::file_reader
+	* Libmobius: new class mobius::io::uri_reader
+	* Libmobius: new class mobius::datetime::date
+	* Libmobius: new class mobius::datetime::time
+	* Libmobius: new class mobius::datetime::datetime
+	* Libmobius: new class mobius::datetime::timedelta
+	* Libmobius: new functions at mobius::datetime::conv_iso_string.h
+	* Libmobius: new functions at mobius::datetime::conv_julian.h
+	* Libmobius: new functions at mobius::datetime::conv_nt_timestamp.h
+	* Libmobius: new functions at mobius::datetime::conv_unix_timestamp.h
+	* Libmobius: mobius::bytearray using unique_ptr
+	* Libmobius: new method bytearray.resize
+	* Libmobius: mobius::crypt using noexcept, constexpr, default and override
+	* Libmobius: mobius::hash_crc32 using precalculated CRC table
+	* Libmobius: new class mobius::crypt::cipher_base (abstract class)
+	* Libmobius: new class mobius::regex
+	* Libmobius: mobius/exception_posix.h for errno based exceptions
+	* Python API: new package mobius.io
+	* Python API: new class mobius.io.uri_reader
+	* part-catalogue: using combobox + listview instead of a treeview
+	* part-model: use sqlite3 database
+	* part-model: service part.catalogue.iter removed
+	* part-model: service part.catalogue.load removed
+	* part-model: service part.catalogue.save removed
+	* part-model: service part.catalogue.import removed
+	* part-model: service part.catalogue.export removed
+	* part-model: new service part.set_all
+	* part-model: new service part.get_all
+	* part-model: new service part.get_by_category
+	* cellphone-agent: datetime parsing bug fixed. Reported by Vladimir Santos
+	* uri-file: method File.get_uri_scheme removed
+	* uri-file: method File.get_dirname removed
+	* uri-file: method File.is_directory removed
+	* emule-agent: does not use uri.new-file
+	* hive: use mobius.io.uri_reader
+	* gigatribe-agent: use mobius.io.uri_reader
+	* imagefile-dossier: use mobius.io.uri_reader
+	* imagefile-solo: use mobius.io.uri_reader
+	* imagefile-talon: use mobius.io.uri_reader
+	* skype-agent: use mobius.io.uri_reader
+	* skype-agent-l33l: use mobius.io.uri_reader
+	* skype-agent-sqlite: use mobius.io.uri_reader
+	* skype-agent-sqlite: use temporary .sqlite file
+	* data-sourcerer: check if datasource is available on populate_metadata
+
+Mobius Forensic Toolkit 0.5.23
+
+	* Libmobius: new class mobius::unittest
+	* Libmobius: new class mobius::bytearray
+	* Libmobius: new class mobius::crypt::hash_base (abstract class)
+	* Libmobius: new class mobius::crypt::hash_crc32
+	* Libmobius: new class mobius::crypt::hash_zip
+	* Libmobius: new class mobius::crypt::cipher_block (abstract class)
+	* Libmobius: new class mobius::crypt::cipher_block_mode (abstract class)
+	* Libmobius: new class mobius::crypt::cipher_block_mode_ecb
+	* Libmobius: new class mobius::crypt::cipher_block_mode_cbc
+	* Libmobius: new class mobius::crypt::cipher_des
+	* Libmobius: new class mobius::crypt::cipher_stream (abstract class)
+	* Libmobius: new class mobius::crypt::cipher_rc4
+	* Libmobius: new class mobius::crypt::cipher_zip
+	* Libmobius: new class mobius::global_instance
+	* Libmobius: new class mobius::application
+	* Libmobius: code compatible with C++11
+	* Libmobius: mobius/exception.inc defines macro MOBIUS_EXCEPTION_MSG
+	* Libmobius: class mobius::exception removed
+	* Libmobius: mobius::tsk::exception derived from std::runtime_error
+	* Libmobius: mobius::tsk::stream.operator bool removed
+	* Libmobius: mobius::tsk::entry retrieves all data streams
+	* Libmobius: mobius/config.h header file removed
+	* Python API: new wrapper class mobius.crypt.hash_zip
+	* Python API: new wrapper class mobius.crypt.cipher_des
+	* Python API: new wrapper class mobius.crypt.cipher_rc4
+	* Python API: new wrapper class mobius.crypt.cipher_zip
+	* Python API: method Application.get_directory removed
+	* hive-report: use mobius.crypt.cipher_rc4
+	* hive-report: use mobius.crypt.cipher_des
+	* hive-report: new report "encrypted volumes" lists Folder Locker 6 vols
+	* hive-pstore: use mobius.crypt.cipher_des
+	* hive-turing: use mobius.crypt.cipher_rc4
+	* hive-turing: use mobius.crypt.cipher_des
+	* turing-model: use mobius.crypt.cipher_des
+	* examples: registry_get uses mobius::application
+	* examples: tsk uses mobius::application
+	* tutorial: chapter "cracking Windows password" moved to homepage
+
+Mobius Forensic Toolkit 0.5.22
+
+	* Libmobius: new mobius::tsk classes to access libtsk
+	* python API: wrapper for mobius::tsk
+	* new installation method using configure, make and make install
+	* mediator.py: moved to mobius package
+	* emule-agent: new report "shared folders"
+	* emule-agent: handle tags 0x34 and 0x35
+	* emule-agent: fix BLOB decoding. Reported by Clemente Paixão
+	* emule-agent: specific policies for dreamule and emule config
+	* emule-agent: check if AC_SearchStrings.dat exists before opening. Reported by Clemente Paixão
+	* hive-report: catch exceptions at get_computer_name function
+	* hive-report: add Wow6432Node subkeys to the Installed Program report. Implemented by Vladimir Santos
+	* datasource-physical-device: fix retrieve_metadata for disks that have empty serial numbers
+	* imagefile-ewf: fix amount of bytes read in decode_hash_section
+	* engelbart: class UIManager implemented
+
+Mobius Forensic Toolkit 0.5.21
+
+	* new extension emule-agent
+	* new extension engelbart
+	* hive-report: new report "Ares accounts"
+	* hive-report: new report "last mounted devices"
+	* hive-report: installed program handles UNIX install datetime
+	* hive-report: installed program also retrieves from NTUSER.dat uninstall subkeys. Suggested by Clemente Paixão
+	* gigatribe-agent: datetime decoder fixed
+	* gtk-ui: service ui.start moved to engelbart extension
+	* gtk-ui: service ui.stop moved to engelbart extension
+	* gtk-ui: service ui.flush moved to engelbart extension
+	* gtk-ui: deprecated service ui.render-icon removed
+	* gtk-ui: service ui.new-icon-from-data set deprecated
+	* gtk-ui: service ui.new-icon-from-file set deprecated
+	* skype-agent: REPORT_ICON_DATA replaced by report.run icon
+	* emule-agent: REPORT_ICON_DATA replaced by report.run icon
+	* ice: REPORT_ICON_DATA replaced by report.run icon
+	* report-wizard: TRASH_BIN_ICON replaced by dnd.delete icon
+	* ice: use image_buffer instead of ui.render-icon
+	* category-manager: use image_buffer instead of ui.render-icon
+	* engelbart: new service ui.new-factory
+	* extension-manager: use image_buffer instead of ui.new-icon-from-data
+	* date-code: copyright (c) 2014
+
+Mobius Forensic Toolkit 0.5.20
+
+	* new extension cellphone-agent
+	* report-model: new service report.run-dialog
+	* report-model: generate '%' instead of '%%' in verbatim environment
+        report-model: do not generate duplicated methods in .py
+	* gtk-ui: forbid treeitem DND onto itself
+	* gtk-ui: case treeview icon cache implemented
+	* gtk-ui: do not expand selected item when item.children is modified
+	* skype-agent: "generate report" option
+	* skype-agent: disable DND on account view when not selected
+	* skype-agent: account tile image repositioned
+	* ice: use service report.run-dialog
+	* sdi-window-manager: call to on_widget_started eliminated
+	* partition-viewer: scan only partition-system components
+	* partition-agent: update item.children only whether it detects partitions
+	* partition-agent-dos: keep item.children when building components
+	* turing: test dictionary option fixed
+
+Mobius Forensic Toolkit 0.5.19
+
+	* new extension partition-agent
+	* new extension partition-agent-dos
+	* datasource-model: new service datasource.new-slice
+	* datasource-imagefile: set datasource.start and datasource.end
+	* gtk-ui: reorder treeview only when necessary
+	* gtk-ui: tableview column's new attribute is_exportable
+	* hive: better link between HKEY_USERS and NTUSER.DAT
+	* hive-report: new report Shared Folders
+	* ice: reload items only when item.children is modified
+	* ice: remove items by item.uid
+	* ice: do not reuse children var in treeview_on_file_dropped
+	* partition-viewer: show partition-system.dos components
+	* object-model: new method object._copy ()
+	* object-model: set class_id attribute
+	* category-model: merge in categories from extension's category.xml
+	* turing: test keywords while reading dictionary file
+	* turing: importer for John The ripper .john (hashes) file
+	* xml-pickle: use class_id to identify mobius objects
+	* xml-pickle: delete deprecated code
+
+Mobius Forensic Toolkit 0.5.18
+
+	* hive-report: new report WiFi Network List
+	* hive-report: new report Gigatribe accounts for Gigatribe v3.0
+	* hive-report: new report Gigatribe download folders for Gigatribe v3.0
+	* hive-report: new report Gigatribe requested passwords for Gigatribe v3.0
+	* hive-report: new report Ares Search History
+	* new extension gigatribe-agent to browse Gigatribe chat files
+	* developers-guide:  new chapter Mobius' Software Architecture
+	* gtk-ui: new method container.set_content
+	* gtk-ui: new method container.get_content
+	* gtk-ui: new method container.remove_content
+	* gtk-ui: tableview columns accept new attribute is_markup
+	* report-viewer: use ui.widget.container
+	* datasource-model: fix datasource.get-path bug
+	* imagefile-solo: fix Handler.retrieve_metadata bug
+	* imagefile-dossier: implement Handler.build_reader
+	* datasource-imagefile: better support for solo, dossier and talon in datasource.get-path service
+	* copyright (c) 2013 notice
+
+Mobius Forensic Toolkit 0.5.17
+
+	* new extension datasource-imagefile
+	* new extension datasource-physical-device
+	* new extension imagefile-dossier
+	* new extension imagefile-talon
+	* new extension imagefile-solo
+	* data-sourcerer: improved version, accepting datasource types
+	* datasource-model: new service datasource.get-metadata
+	* datasource-model: new service datasource.is-available
+	* datasource-model: service 'set-default-type' eliminated
+	* datasource-model: service 'datasource.new-from-uri' moved to datasource-imagefile
+	* datasource-imagefile: handles imagefiles DND
+	* datasource-scsi extension eliminated 
+	* datasource-raw extension eliminated 
+	* datasource-ewf extension eliminated 
+	* datasource-talon extension eliminated 
+	* datasource-solo extension eliminated 
+	* datasource-dossier extension eliminated 
+	* gtk-ui: new widget 'container' implemented
+	* gtk-ui: method 'hide' implemented for all widgets
+	* gtk-ui: tableview.get_data ignore invisible columns 
+	* data-viewer: better control of selected item
+	* data-viewer: handles 'item.datasource-modified' event
+	* partition-viewer: better control of selected item
+	* partition-viewer: handles 'item.datasource-modified' event
+	* uri-file: file.get_metadata uses datatime.datetime
+	* ice: DND before case item bug fixed
+	* report-model: global dataholder class Data available
+	* turing: import dialog title corrected
+	* category-model: category.xml updated
+	* xml-pickle: added support to 'long' type
+
+Mobius Forensic Toolkit 0.5.16
+
+	* new extension turing-model deploys a cryptographic API
+	* new extension turing is a frontend to the turing-model extension
+	* new extension hive-turing integrates the hive and the turing extensions
+	* gtk-ui: new widget ui.widget.multiviewer
+	* gtk-ui: tableview.__iter__ implemented
+	* hive: clear registry option implemented
+	* hive: emits 'registry.updated' event
+	* hive-report: user accounts and user passwords reports unified
+	* hive-report: user accounts report uses crypt.unhash_win
+	* hive-report: new "logon info" report
+	* imagefile-split: method is_available implemented
+	* imagefile-raw: method is_available implemented
+	* imagefile-ewf: method is_available implemented
+	* partition-viewer: check if stream is available
+	* data-viewer: check if stream is available
+	* gtk-ui-treeview: bug fixed in clear method
+	* tutorial: new chapter "cracking Windows password"
+
+Mobius Forensic Toolkit 0.5.15
+
+	* new extension gtk-ui-treeview implements ui.widget.treeview with GtkGenericTreeModel
+	* new extension partition-viewer
+	* hive: uses ui.widget.treeview in reportview
+	* part-catalogue: uses ui.widget.treeview
+	* part-catalogue: uses ui.widget.attribute-list
+	* imagefile-split: better implementation of write method
+	* datasource-model: workaround for datasource-scsi size bug
+	* datasource-scsi: strips '\0' from metadata
+
+Mobius Forensic Toolkit 0.5.14
+
+	* new extension imagefile-raw
+	* new extension imagefile-split
+	* new extension imagefile-ewf
+	* data-sourcerer: export imagefiles as 4GB split
+	* data-viewer: horiz. scrollbar added
+	* data-viewer: bytes per line menu option implemented
+	* datasource-talon: handles file DND directly
+	* datasource-ewf: handles file DND directly
+	* datasource-ewf: support to multiple segment files
+	* datasource-dossier: handles file DND directly
+	* datasource-solo: handles file DND directly
+	* datasource-scsi: handles file DND directly
+	* datasource-raw: handles file DND directly
+	* datasource-model: service datasource.get-writer eliminated
+	* datasource-model: service datasource.new-from-type eliminated
+	* resources datasource.handler renamed to agent.datasource
+	* resource dnd-file.handler renamed to ui.dnd-file
+	* uri: seek/tell bug fixed
+	* uri/uri-file: re-designed for better separation between handler and streams
+	* uri-file: method ReadStream.get_size implemented
+	* skype-sqlite: handles NULL chatnames
+	* application.py: app.add-resource priority level eliminated
+
+Mobius Forensic Toolkit 0.5.13
+
+	* new extension Skype Agent l33l to handle old Skype log files
+	* new extension Skype Agent SQLite to handle Skype 5.x log files
+	* new extension Hive Protected Storage
+	* hive: shows Protected Storage subtree
+	* hive: better handling of subkeys
+	* hive-report: e-mail account report shows POP3, SMTP and HTTP passwords when available
+	* hive-report: Protected Storage report eliminated
+	* hive-protected-storage: new report "Internet Explorer auto complete"
+	* extension-builder: save-as bug fixed
+	* extension-builder: generate \' instead of ' at EXTENSION_* vars
+	* uri: new method ReadStream.get_file
+	* uri: new method WriteStream.get_file
+	* uri: new method File.get_local_reference
+	* gtk-ui: ui.new-icon-from-data resizes image using INTERP_BILINEAR
+	* gtk-ui: get_text do not export invisible columns
+
+Mobius Forensic Toolkit 0.5.12
+
+	* new extension Skype Agent
+	* hive-report: "on the internet" search added to Search Assistant Report
+	* hive-report: "computer and people" search added to Search Assistant Report
+	* report-model: escapes '^'
+
+Mobius Forensic Toolkit 0.5.11
+
+	* mobius_case_update.py eliminated
+	* application.py: emits 'app.resource-added'
+	* application.py: emits 'app.resource-removed'
+	* ice: updates the tools menu dynamically
+	* gtk-ui: widget 'data-table' renamed to 'tableview'
+	* gtk-ui: attribute-list and tableview export data as LaTeX table
+	* hive: function get_key_by_path created
+	* hive: function get_key_by_name created
+	* hive: function get_value_by_path created
+	* hive: function get_value_by_name created
+	* hive: function get_data_by_path created
+	* hive: function get_data_by_name created
+	* hive: calls to Registry.__update_root_keys fixed
+	* hive: uses '\' as key separator instead of '/'
+	* hive: handles HKU\.DEFAULT
+	* hive: uses app.resources instead of services
+	* hive: service registry.register-report eliminated
+	* hive: service registry.unregister-report eliminated
+	* hive: can export values as report
+	* hive-report: last access date added to the recent-docs report
+	* hive-report: new "autorun" report
+	* hive-report: new "services" report
+	* hive-report: new "Internet Explorer download folder" report
+	* hive-report: new "Internet Explorer typed URLs" report
+	* hive-report: new "My Recent Documents by Filetype" report
+	* hive-report: new "MRU files opened/saved" report
+	* hive-report: new "MRU files executed" report
+	* hive-report: new "search assistant"' report
+	* hive-report: new "printer ports" report
+	* hive-report: new "processors" report
+	* hive-report: new "all devices" report
+	* hive-report: new "HID devices" report
+	* hive-report: new "network devices" report
+	* hive-report: new "stream devices" report
+	* hive-report: user logon info added to user accounts report
+	* hive-report: installed programs report shows all entries of the Uninstall key and key mtime
+	* hive-report: last modification and last load times added to user profiles report
+	* report-model: escapes '\' as "\textbackslash" instead of "\backslash"
+
+Mobius Forensic Toolkit 0.5.10
+
+	* new extension: Integrated Case Environment (ICE)
+	* attribute-viewer: reimplemented as view
+	* report-viewer: reimplemented as view
+	* data-sourcerer: reimplemented as view
+	* data-viewer: reimplemented as view
+	* uri: method File.get_uri implemented
+	* uri: method File.get_uri_scheme implemented
+	* uri: method File.exists implemented
+	* uri: method File.is_regular_file implemented
+	* uri: method file.get_basename implemented
+	* uri: method file.get_dirname implemented
+	* uri: method file.get_extension implemented
+	* uri: method file.new_write_stream implemented
+	* uri: method file.get_metadata implemented
+	* uri: write stream implemented
+	* uri: service uri.register-scheme-handler eliminated
+	* uri: service uri.unregister-scheme-handler eliminated
+	* uri-file: added support to write stream
+	* gtk-ui: uses URI extension to write files
+	* gtk-ui: new widget "treeview"
+	* gtk-ui: new widget "view-selector"
+	* hive: better identification of SYSTEM hivefiles
+	* hive-report: uses URI extension to write JTR files
+	* hive-report: exports only unknown user passwords hashes to the .john file
+	* date-code: handles object.attribute-modified
+	* part-model: handles object.attribute-modified
+	* part-catalogue: solved keyerror bug
+	* category-model: service category.get-icon-data returns raw data instead of base64
+	* object-model: Object attributes are now python attributes
+	* object-model: service object.get-attribute eliminated
+	* object-model: service object.set-attribute eliminated
+	* object-model: service object.expand-value-masks created
+	* object-model: service model.new eliminated
+	* object-model: service model.new-object eliminated
+	* object-model: service model.add-object eliminated
+	* object-model: service model.get-object eliminated
+	* object-model: service model.remove-object eliminated
+	* object-model: service model.add-relation eliminated
+	* object-model: service model.remove-relation eliminated
+	* object-model: service model.has-relation-from eliminated
+	* case-model: service case.get-attribute eliminated
+	* case-model: service case.set-attribute eliminated
+	* case-model: service case.get-icon-data eliminated
+	* case-model: service case.save-all eliminated
+	* case-model: service case.any-modified eliminated
+	* case-model: service item.expand-value-masks eliminated
+	* case-model: service item.expand-expression eliminated
+	* case-model: service item.get-attribute eliminated
+	* case-model: service item.set-attribute eliminated
+	* case-model: service item.get-parent eliminated
+	* case-model: service item.get-case eliminated
+	* case-model: service object.add-child eliminated
+	* case-model: service object.has-children eliminated
+	* case-model: service object.remove-child eliminated
+	* case-model: service object.iter-children eliminated
+	* datasource-model: service item.set-datasource eliminated
+	* datasource-model: service item.remove-datasource eliminated
+	* datasource-model: service item.get-datasource eliminated
+	* datasource-model: service datasource.add-handler eliminated
+	* datasource-model: service datasource.remove-handler eliminated
+	* datasource-model: service datasource.list-exportables eliminated
+	* extension Mobius Forensic Toolkit App eliminated
+	* extension Case Viewer eliminated
+
+Mobius Forensic Toolkit 0.5.9
+
+	* datasource-dossier: new extension to handle Logicube Dossier imagefiles
+	* datasource-scsi: minor improvements
+	* hive-report: new LSA secrets report
+	* hive-report: new protected storage report
+	* hive-report: new cached credentials report
+	* hive-report: user passwords report shows passwords stored into LSA secrets
+	* hive-report: user passwords report export found passwords to a JTR .pot file
+	* hive-report: email accounts report shows passwords stored into protected storage
+	* hive-report: O.S. general info shows max activation date
+	* extension-builder: code of service extension.new implemented
+	* extension-builder: code of service extension.open implemented
+	* extension-builder: code of service extension.save implemented
+	* extension-builder: code of service extension.new-service implemented
+	* extension-builder: code of service extension.new-callback implemented
+	* extension-builder: code of service extension.new-arg implemented
+	* extension-builder: code of module mobius.extension.pickle implemented
+	* extension-builder: code of module mobius.extension.model implemented
+	* extension-builder: code of module mobius.extension.main implemented
+	* gtk-ui: service ui.new-data-viewer eliminated
+	* gtk-ui: service ui.register-data-viewer eliminated
+	* gtk-ui: service ui.unregister-data-viewer eliminated
+	* gtk-ui: data-table -> column.is_visible added
+	* gtk-ui: data-table -> column.type = 'object' implemented
+	* gtk-ui: data-table -> new event 'on_selection_changed'
+	* category-model: attr.is_editable added to category.iter-attributes service
+	* category-model: new category.xml
+	* part-catalogue: copy and paste works only for filled attributes
+	* part-catalogue: shows only editable attributes when editing
+	* case-viewer: shows only editable attributes when adding new item
+	* attribute-viewer: uses attr.is_editable from category.iter-attributes
+	* mobius-forensic-toolkit: sort icons by title
+	* mobius-forensic-toolkit: select icons when single clicking
+	* service config.add-resource replaced by app.add-resource
+	* service config.remove-resource replaced by app.remove-resource
+	* service config.get-resource replace by app.get-resource
+	* service config.list-resources replaced by app.list-resources
+	* service extension.new eliminated
+	* service extension.open eliminated
+	* service extension.save eliminated
+	* service extension.new-service eliminated
+	* service extension.new-callback eliminated
+	* service extension.new-arg eliminated
+	* module mobius.extension.pickle eliminated
+	* module mobius.extension.model eliminated
+	* module mobius.extension.main eliminated
+
+Mobius Forensic Toolkit 0.5.8
+
+	* gtk-ui: service ui.new-widget created
+	* gtk-ui: widget attribute-list implemented
+	* gtk-ui: widget data-table implemented
+	* gtk-ui: service ui.new-data-viewer set as deprecated
+	* attribute-viewer: uses ui.widget.attribute-list
+	* attribute-viewer: item attributes report implemented
+	* attribute-viewer: reload attributes option
+	* hive: disables report reeview until registry files are added
+	* hive-report: e-mail accounts report
+	* hive-report: tcp/ip interfaces report
+	* hive-report: computer descriptions report
+	* hive-report: exports user passwords in a format suitable for John the Ripper
+	* hive-report: uses ui.widget.attribute-list
+	* part-catalogue: copy and paste of parts
+	* xml-pickle: added support to datetime.datetime
+	* xml-pickle: deprecated code eliminated
+	* data-viewer: supressed jump expression limit
+	* case-model: sets ctime and mtime attributes
+	* object-model: service object.has-attribute recoded as object method
+	* object-model: service object.remove-attribute recoded as object method
+	* category-model: fixed bug in SIMCard icon
+	* config: service config.add-resource created
+	* config: service config.get-resource created
+	* config: service config.list-resources created
+	* config: service config.remove-resource created
+	* report-viewer: added support to ui.widget.*
+	* better handling of Windows directories
+
+Mobius Forensic Toolkit 0.5.7
+
+	* hive: reports were grouped
+	* hive: shows REG_NONE values
+	* hive: handles null values
+	* hive: better copy (CTRL+C) mechanism
+	* hive-report: recent docs report
+	* hive-report: user assist report
+	* hive-report: product keys report
+	* hive-report: O.S. folders report
+	* hive-report: user logon report
+	* hive-report: computer info report
+
+Mobius Forensic Toolkit 0.5.6
+
+	* Extension "URI" created
+	* Extension "URI-file" created
+	* hive: better detection of SAM files
+	* hive: key classname fixed (reported by Vladimir Santos)
+	* hive: uses extension URI instead of path
+	* hive: populates HKEY_USERS
+	* hive-report: user passwords report (developed by Vladimir Santos)
+	* hive-report: installed programs report
+	* hive-report: disk devices report
+	* hive-report: optical devices report
+	* hive-report: network adapters report
+	* hive-report: imaging devices report
+	* hive-report: display adapters report
+	* hive-report: monitor devices report
+	* xml-pickle: uses libxml2 URI's instead of path
+	* gtk-ui: service ui.new-data-viewer created
+	* gtk-ui: service ui.register-data-viewer created
+	* gtk-ui: service ui.unregister-data-viewer created
+	* gtk-ui: service ui.new-listview eliminated
+	* gtk-ui: service ui.new-attributeview eliminated
+	* extension-builder: Compiler incorporated
+	* module mobius.extension.compiler eliminated
+	* object-model: service model.load eliminated
+	* all extensions were converted to .mobius
+
+Mobius Forensic Toolkit 0.5.5
+
+	* Extension "Hive Report" created
+	* Extension "Report Viewer" created
+	* hive: registry logical view
+	* hive: registry reports
+	* hive-report: O.S. information report
+	* hive-report: user accounts report
+	* hive-report: user profiles report 
+	* gtk-ui: widget ListView created
+	* gtk-ui: widget AttributeView created
+	* case-viewer: report-data DND
+	* category-manager: import and export database
+	* datasource-scsi: better use of ioctl
+	* extension-manager: read version from config
+	* data-viewer: set vscrollbar when jumping to address
+	* part-catalogue: scroll to new part
+	* service case.get-icon-data created
+	* attribute case.icon_data eliminated
+
+Mobius Forensic Toolkit 0.5.4
+
+	* Extensions are now deployed in .mobius files
+	* Extension "Extension Manager" created
+	* Extension "Datasource SCSI" created
+	* Extension "Data viewer" created
+	* floppy-imager: uses direct I/O
+	* floppy-imager: setup.py created
+	* mobius.extension: new function 'install'
+	* mobius.extension: new function 'uninstall'
+	* service ui.new-icon-from-data created
+	* service extension.is-running created
+	* case-viewer: better DND handling
+
+Mobius Forensic Toolkit 0.5.3
+
+	* xml-pickle: serialize dict items as tuples
+	* xml-pickle: do not save 'value' for NoneType's
+	* xml-pickle: do not save 'value' for bools = False
+	* xml-pickle: handle python objects circular references
+	* xml-pickle: handle python objects cross references
+	* case-model: save case using xml.pickle
+	* object-model: service model.save eliminated
+	* mobius_case_update: script to update case files
+	* Extension Hive created
+
+Mobius Forensic Toolkit 0.5.2
+
+	* Extension config created
+	* service config.set created
+	* service config.get created
+	* extensions use 'config.get/set' instead of 'app.get/set-config'
+	* service app.get-config eliminated
+	* service app.set-config eliminated
+	* mediator: method new_client_mediator eliminated
+	* mediator: events are called right after 'emit'
+	* mediator: handlers can stop emission sequence by returning True
+	* mediator: added chain_end option to connect method
+	* case-viewer: emit one 'item.dnd-file' per DND file
+	* case-viewer: 'report run' toolbutton added
+	* report-wizard: component 'assign' added
+	* report-wizard: use widget snapshot during DND
+	* report-wizard: cache refresh bug fixed
+	* Extension datasource-solo created
+	* datasource-talon: support to software v2.40
+
+Mobius Forensic Toolkit 0.5.1
+
+	* datasource-raw: random access reader
+	* datasource-talon: random access reader
+	* Extension Datasource EWF with read support
+	* extensions use URI instead of path
+
+Mobius Forensic Toolkit 0.5
+
+	* module mobius.model.extension renamed to mobius.extension
+	* mobius.extension.Compiler compiles .xml extensions to .py
+	* extensions now have callbacks
+	* part-model: uses callbacks
+	* date-code: uses callbacks
+	* case-viewer: uses callbacks
+	* created package mobius.extension
+	* created module mobius.extension.model
+	* created module mobius.extension.pickle
+	* created module mobius.extension.compiler
+	* created module mobius.extension.main
+	* Extension Data Sourcerer created
+	* Extension Datasource Model created
+	* Extension Datasource Raw created
+	* Extension Datasource Talon created
+
+Mobius Forensic Toolkit 0.4.8
+
+	* extension-builder: find forward and back bug fixed
+	* extension.py: support services and args
+	* service extension.start-api created
+	* service extension.stop-api created
+
+Mobius Forensic Toolkit 0.4.7
+
+	* extension-builder: undo/redo
+	* extension-builder: cut/copy/paste
+	* extension-builder: select all
+	* extension-builder: jump to line
+	* extension-builder: delete
+	* extension-builder: find
+	* extension-builder: find and replace
+	* Extension Object Model created
+	* Service item.get-attribute created
+	* Service case.set-attribute created
+	* Service case.get-attribute created
+	* Service object.get-attribute created
+	* Service object.set-attribute created
+	* Service object.has-attribute created
+	* Service object.remove-attribute created
+	* report-model: bug generating verbatim was fixed
+	* part-model: deprecated code has been deleted
+	* category-model: deprecated code has been deleted
+	* xml-pickle: deprecated code has been deleted
+	* xml-pickle: save long string in <string> tag instead of property
+	* xml-pickle: save long unicode in <unicode> tag instead of property
+	* attribute-viewer: show UID as read-only attribute
+	* mobius-forensic-toolkit: handle delete-event correctly
+	* Extensions are now coded only in XML
+
+Mobius Forensic Toolkit 0.4.6
+
+	* Service item.expand-initvalues renamed to item.expand-value-masks
+	* Service category.attribute.set-init-value renamed to category.attribute.set-value-mask
+	* attribute-viewer: attributes with value_mask are not editable
+	* report-wizard: text and verbatim use multiline text
+	* report-wizard: ${} option in verbatim
+	* Extension Mobius Forensic Toolkit App created
+	* Module mobius.ui.main_window removed
+	* Module mobius.ui.extension_manager_dialog removed
+	* Program mobius_icq.py eliminated
+	* Service calls are now isolated by try...except
+	* Service app.start created
+	* Service app.get-data-path created
+	* Service toolbox.add moved to Mobius Forensic Toolkit App extension
+	* Service toolbox.remove created
+	* Module mobius.model.extension created
+	* Extensions are coded in XML
+	* Service extension.new created
+	* Service extension.open created
+	* Service extension.save created
+
+Mobius Forensic Toolkit 0.4.5
+
+	* category-manager: scrolling in attribute up/down
+	* Service category.new created
+	* Service category.set created
+	* Service category.remove created
+	* Service category.iter-attributes created
+	* Service category.list.iter created
+	* Service category.list.save created
+	* Service category.attribute.remove created
+	* Service category.get-list eliminated
+	* Service category.set-list eliminated
+	* Service category.get-attribute-list eliminated
+	* Service item.expand-attributes created
+	* Service item.expand-initvalues created
+	* category-model extension created
+	* category_manager extension renamed to category-manager
+	* Service item.expand-attributes created
+	* case-viewer: add item now sets attributes
+
+Mobius Forensic Toolkit 0.4.4
+
+	* case-model: create-item adds object to case
+	* report-model: python string escaping fixed
+	* report-model: eliminated report.name usage
+	* part-model extension created
+	* part-catalogue: export catalogue
+	* part-catalogue: import catalogue
+	* Service part.new created
+	* Service part.set created
+	* Service part.get created
+	* Service part.remove created
+	* Service part.catalogue.load created
+	* Service part.catalogue.save created
+	* Service part.catalogue.iter created
+	* Service part.catalogue.export created
+	* Service part.catalogue.import created
+	* part_catalogue extension renamed to part-catalogue
+
+Mobius Forensic Toolkit 0.4.3.1
+
+	* Workaround for SVG/GTK SIGFPE bug while renderind Report Wizard icon. Reported by Adriano Brasil
+	* setup.py c code execution bug fixed
+
+Mobius Forensic Toolkit 0.4.3
+
+	* Package mobius.pickle eliminated
+	* Module mobius.ui.manager eliminated
+	* Service app.get-config created
+	* Service app.set-config created
+	* Service ui.start created
+	* Service case.get-path created
+	* Floppy Imager extension created
+	* SDI: Working area's position and size are saved
+	* Mobius Tutorial written
+
+Mobius Forensic Toolkit 0.4.2
+
+	* Report model extension created
+	* Service report.load created
+	* Service report.save created
+	* Service report.iter created
+	* Service report.run created
+	* Report Wizard extension created
+
+Mobius Forensic Toolkit 0.4.1
+
+	* Case Viewer extension substitutes case manager module
+	* Module mobius.ui.case_treeview eliminated
+	* Module mobius.ui.case_window eliminated
+	* Module mobius.ui.add_item_dialog eliminated
+	* Category icon rendering fixed in Part Catalogue
+	* XML Pickle extension created
+	* Service xml.pickle created
+	* Service xml.unpickle created
+	* Service case.get-model created
+	* Service case.set-model created
+	* Spider extension eliminated
+	* Case objects now have capabilities
+	* Dialog close fixed in Extension Manager. Reported by Vladimir Santos
+
+Mobius Forensic Toolkit 0.4
+
+	* Case Model extension handles case and item objects
+	* Service app.get-window-title eliminated
+	* Service item.set-attribute moved to Case Model extension
+	* Service case.new created
+	* Service case.open created
+	* Service case.save created
+	* Service case.close created
+	* Service case.any-modified created
+	* Service case.save-all created
+	* Module mobius.model.case eliminated
+	* Module mobius.model.item eliminated
+	* Module mobius.pickle.case eliminated
+	* Part Catalogue save on close fixed
+	* Part Catalogue part removal fixed
+	* Category Manager icon selection fixed
+	* Service category.get-icon-data created
+
+Mobius Forensic Toolkit 0.3.5
+
+	* Default value corrected in AttributeViewer
+	* Mediator emits events in chronological order
+	* Mediator.new_client_mediator implemented
+	* Extensions use mediator.new_client_mediator for better clean up
+	* Extensions use ui.working-area.new
+	* SDI extension implements Single Document Interface
+	* Better clean-up code when de-registering from mediator
+
+Mobius Forensic Toolkit 0.3.4
+
+	* Created mediator.unadvertise
+	* Extensions use icon_data instead of icon
+	* GtkUI extension implemented
+	* DateCode extension created
+	* AttributeViewer uses category.get
+	* Service ui.icon-render created
+	* Service ui.flush created
+	* Service ui.stop created
+	* Service icon.create eliminated
+	* Service app.get-name created
+	* Service app.get-version created
+	* Service ui.new-window created
+	* Mediator.call now accepts keyword arguments
+
+Mobius Forensic Toolkit 0.3.3
+
+	* CasePropertiesDialog emits 'case.attribute-modified'
+	* CaseTreeview changes case name on modification
+	* CaseTreeview changes item names on modification
+	* Events now accept keyword parameters
+	* AttributeViewer columns are now resizable
+	* Fixed on_delete event in AttributeViewer.Window
+	* Attributes can be moved up and down in CategoryManager
+	* PartCatalogue extension implemented
+
+Mobius Forensic Toolkit 0.3.2.1
+
+	* Attribute edition bug has been fixed
+
+Mobius Forensic Toolkit 0.3.2
+
+	* Each extension runs in an isolated context
+	* Category Manager extension created
+	* Support to SVG category icons added
+
+Mobius Forensic Toolkit 0.3.1
+
+	* Mediator implemented
+	* Attribute viewer re-coded as extension
+	* bug fix: pickle.case sets item.case
+	* Case Manager window created
+	* Main window created
+
+Mobius Forensic Toolkit 0.3
+
+	* Featuring mobius_bin, a first step toward an integrated tool
+	* Extension manager created
+	* Manages categories throught category.xml
+
+Mobius Forensic Toolkit 0.2.0.1
+
+	* Mobius_icq: fix for Python 2.4. Contributed by Christophe Monniez
+
+Mobius Forensic Toolkit 0.2.0
+
+	* First public release
+	* Features: mobius_icq
+
+Mobius Forensic Toolkit 0.1.6
+
+	* Mobius_icq: scan evidences for buddy lists and message files
+	* Mobius_icq: main window shows ICQ accounts found
+	* Mobius_icq: support to ICQ2003b .uin files
+	* Mobius_icq: show directories while scanning
+
+Mobius Forensic Toolkit 0.1.5
+
+	* Created mobius.application module
+	* Created mobius.ui.base_window
+	* Created mobius_mail.py
+	* Decoder: eml
+	* Decoder: dbx
+
+Mobius Forensic Toolkit 0.1.4
+
+	* Mobius_im: report
+	* Mobius_im: dialogue view
+	* Mobius_im: read ICQ buddy list
+	* Mobius: application class
+
+Mobius Forensic Toolkit 0.1.3
+
+	* Created mobius_im
+
+Mobius Forensic Toolkit 0.1.2
+
+	* mobius_ca renamed to mobius_image
+
+Mobius Forensic Toolkit 0.1.1
+
+	* Support to BMP, GIF e TIF
+	* Support to .zip
+	* Support to .tar.gz, .tar.bz2, .tar
+
+Mobius Forensic Toolkit 0.1.0
+
+	* Initial version
+	* Show .jpg, .jpeg files
